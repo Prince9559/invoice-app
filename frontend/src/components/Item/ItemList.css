@@ -1,0 +1,61 @@
+.item-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  animation: fadeIn 0.4s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top h3 {
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+}
+
+.price {
+  background: linear-gradient(135deg, #00c3ff, #0077ff);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.desc {
+  margin: 10px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.variant {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

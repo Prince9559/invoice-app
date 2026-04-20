@@ -1,0 +1,94 @@
+.invoice-table {
+  width: 100%;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #00c3ff, #0077ff);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+}
+
+.table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1fr 0.5fr;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  background: white;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+  animation: fadeIn 0.4s ease;
+}
+
+.table-row.header {
+  background: #f1f5f9;
+  font-weight: bold;
+}
+
+.table-row input,
+.table-row select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.table-row input:focus,
+.table-row select:focus {
+  border-color: #00c3ff;
+}
+
+.discount-box {
+  display: flex;
+  gap: 5px;
+}
+
+.total {
+  font-weight: bold;
+  color: #0077ff;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

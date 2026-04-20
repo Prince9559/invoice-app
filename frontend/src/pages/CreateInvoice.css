@@ -1,0 +1,12 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.row select,
+.row input {
+  padding: 6px;
+}
